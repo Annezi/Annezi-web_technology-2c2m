@@ -752,7 +752,7 @@ body {
     }
 
     ;
-    background-image: url(img/woman-BIG.svg);
+    background-image: url(./img/woman-BIG.svg);
     border: 1px solid var(--black-color);
 }
 
