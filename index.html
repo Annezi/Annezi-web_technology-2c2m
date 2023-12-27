@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>UI Kit для *GLAM</title>
+</head>
+
+<body>
+    <div class="text-h1 head">UI Kit для *GLAM</div>
+
+    <div class="text-h1 graphs">Шапка</div>
+
+    <div class="running-row">
+        <div class="marquee">
+            <div class="track">
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+                <div class="content text-title_low">получите промокод на скидку 20% в золотом яблоке</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="dropdown fch">
+                <button class="dropbtn">косметика
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row" id="megaMenuRow">
+                        <div class="column fclmn">
+                            <div class="header-megamenu-keys text-button">
+
+                                <a id="key1" href="#" at="1">Статьи</a>
+
+                                <a id="key2" href="#" at="2">Каталог</a>
+
+                                <a id="key3" href="#" at="3">Рецензии</a>
+
+                                <a id="key4" href="#" at="4">Новости</a>
+
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="header-megamenu-items">
+                                <a style="display: none;" id="item1" href="#"></a>
+                                <!-- <a style="display: none;" id="item2" href="#">Найдите нужный вам продукт с помощью фильтров
+                                    и посмотрите его состав
+                                    и отзывы</a>
+                                <a style="display: none;" id="item3" href="#">Смотрите недавно опубликованные отзывы
+                                    на все возможные товары
+                                    на отдельной странице</a>
+                                <a style="display: none;" id="item4" href="#">Свежие новости из мира косметики и
+                                    косметологии
+                                    со всего мира</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">макияж
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="row">
+                        <div class="column fclmn">
+                            <a href="#" id="key_1">Статьи</a>
+                            <a href="#" id="key_2">Подборки</a>
+                            <a href="#" id="key_3">Туториалы</a>
+                            <a href="#" id="key_4">Блогеры</a>
+                            <a href="#" id="key_5">Косметологи</a>
+                        </div>
+                        <div class="column">
+                            <a href="#" style="display: none;" id="item_1"></a>
+                            <!-- <a href="#">Найдите нужный вам макияж
+                                используя фильтры подборок, которые помогут в поиске нужного туториала</a>
+                            <a href="#">Смотрите все недавно опубликованные туториалы на платформе</a>
+                            <a href="#">Смотрите ленту рекомендаций ваших любимых блогеров</a>
+                            <a href="#">Смотрите ленту рекомендаций, которую публикуют косметологи</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">тесты
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+        <div class="header-logo"><img src="img/logo.png"></div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="dropbtn">о нас
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="dropdown mr77">
+                <button class="dropbtn">войти
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-h1 graphs">Кнопки и иконки</div>
+
+    <div class="container">
+        <div class="user-lists">
+            <div class="user-list">
+                <div class="user-pic"><img src="img/profile-pic-1.svg"></div>
+                <div class="subscribers">
+                    <div class="text-paragraph_small fsubs">1234 подписчика</div>
+                    <div class="text-paragraph_small">234 подписок</div>
+                </div>
+                <div class="user-name text-subtitle-2">Имя</div>
+                <div class="text-paragraph_small">пользователь</div>
+                <div class="nickname text-title_low">@никнейм</div>
+            </div>
+            <div class="user-list">
+                <div class="user-pic" id="sc-btn"><img id="subIMG" src="img/profile-pic-2.svg"></div>
+                <div class="subscribers">
+                    <div class="text-paragraph_small fsubs" id="subP">1234 подписчика</div>
+                    <div class="text-paragraph_small">234 подписок</div>
+                </div>
+                <div class="user-name text-subtitle-2">Имя</div>
+                <div class="text-paragraph_small">пользователь</div>
+                <div class="nickname text-title_low">@никнейм</div>
+            </div>
+            <div class="buttons-more">
+                <div class="icons">
+                    <div class="icon micon"><img src="img/icon-1.svg"></div>
+                    <div class="icon"><img src="img/icon-2.svg"></div>
+                </div>
+                <div class="buttons-1">
+                    <div class="btn-frst text-paragraph_small">Пройти тест -></div>
+                    <div class="btn-scnd text-paragraph_small">Cмотреть отзывы -></div>
+                </div>
+                <div class="buttons-2">
+                    <div class="btn-thrd text-paragraph_small">Дальше -></div>
+                    <div class="btn-save" id="likeBTN">
+                        <div class="btn-four text-paragraph_small">Cохранить себе</div>
+                        <div class="like"><img src="img/like-1.svg" id="likeIMG"></div>
+                    </div>
+                </div>
+                <div class="buttons-3">
+                    <div class="button-five text-paragraph_small" id="btnMenu1">Публикации</div>
+                    <div class="button-six text-paragraph_small" id="btnMenu2">Коллекции</div>
+                    <div class="button-svn text-paragraph_small" id="btnMenu3"><img class="icon-result"
+                            src="img/icon-2.svg" id="btnMenu3IMG">Результаты тестов</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-h1 graphs">Карточки</div>
+
+    <div class="text-large-title graphs">Вам может понравиться</div>
+
+    <div class="container">
+        <div class="maybe">
+            <div class="maybe-like">
+                <div class="maybe-card">
+                    <div class="maybe-like-1">
+                        <div class="mlike-image-1"></div>
+                        <div class="text-paragraph_small publ-name">Заголовок публикации 1</div>
+                    </div>
+                    <div class="tags-mlike">
+                        <div class="tag-mlike-1 text-title_low">тэг</div>
+                        <div class="tag-mlike-2 text-title_low">тэг</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="image-add"></div>
+                        <div class="adds-mlike-text">
+                            <div class="text-paragraph_small adds-name">Имя</div>
+                            <div class="text-paragraph_small adds-user">пользователь</div>
+                            <div class="text-button_nicknames adds-nickname">@никнэйм</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maybe-card">
+                    <div class="maybe-like-1">
+                        <div class="mlike-image-2"></div>
+                        <div class="text-paragraph_small publ-name">Заголовок публикации 2</div>
+                    </div>
+                    <div class="tags-mlike">
+                        <div class="tag-mlike-1 text-title_low">тэг</div>
+                        <div class="tag-mlike-2 text-title_low">тэг</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="image-add"></div>
+                        <div class="adds-mlike-text">
+                            <div class="text-paragraph_small adds-name">Имя</div>
+                            <div class="text-paragraph_small adds-user">пользователь</div>
+                            <div class="text-button_nicknames adds-nickname">@никнэйм</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maybe-card">
+                    <div class="maybe-like-1">
+                        <div class="mlike-image-3"></div>
+                        <div class="text-paragraph_small publ-name">Заголовок публикации 3</div>
+                    </div>
+                    <div class="tags-mlike">
+                        <div class="tag-mlike-1 text-title_low">тэг</div>
+                        <div class="tag-mlike-2 text-title_low">тэг</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="image-add"></div>
+                        <div class="adds-mlike-text">
+                            <div class="text-paragraph_small adds-name">Имя</div>
+                            <div class="text-paragraph_small adds-user">пользователь</div>
+                            <div class="text-button_nicknames adds-nickname">@никнэйм</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maybe-card">
+                    <div class="maybe-like-1">
+                        <div class="mlike-image-4"></div>
+                        <div class="text-paragraph_small publ-name">Заголовок публикации 4</div>
+                    </div>
+                    <div class="tags-mlike">
+                        <div class="tag-mlike-1 text-title_low">тэг</div>
+                        <div class="tag-mlike-2 text-title_low">тэг</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="image-add"></div>
+                        <div class="adds-mlike-text">
+                            <div class="text-paragraph_small adds-name">Имя</div>
+                            <div class="text-paragraph_small adds-user">пользователь</div>
+                            <div class="text-button_nicknames adds-nickname">@никнэйм</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maybe-fine">
+                <div class="maybe-card-22">
+                    <div class="maybe-like-5">
+                        <div class="mlike-image-5"></div>
+                        <div class="text-paragraph_small publ-name">Заголовок публикации</div>
+                    </div>
+                    <div class="tags-mlike">
+                        <div class="tag-mlike-1 text-title_low">тэг</div>
+                        <div class="tag-mlike-2 text-title_low">тэг</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="image-add"></div>
+                        <div class="adds-mlike-text">
+                            <div class="text-paragraph_small adds-name">Имя</div>
+                            <div class="text-paragraph_small adds-user">пользователь</div>
+                            <div class="text-button_nicknames adds-nickname">@никнэйм</div>
+                        </div>
+                        <div class="next"><img src="img/next.svg"></div>
+                    </div>
+                </div>
+                <div class="maybe-cardd">
+                    <div class="maybe-like-5">
+                        <div class="mlike-image-6"></div>
+                        <div class="text-subtitle publ-name ml-24">Заголовок публикации</div>
+                    </div>
+                    <div class="text-paragraph_small adds-name ml-24">Краткое описание
+                        в две-три строки</div>
+                    <div class="tags-mlike-2 ml-24">
+                        <div class="tag-mlike-1 text-title_low">тэг</div>
+                        <div class="tag-mlike-2 text-title_low">тэг</div>
+                    </div>
+                </div>
+                <div class="maybe-card-33">
+                    <div class="maybe-like-5">
+                        <div class="mlike-image-5"></div>
+                        <div class="text-paragraph_small publ-name">Заголовок публикации</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="image-add"></div>
+                        <div class="adds-mlike-text">
+                            <div class="text-paragraph_small adds-name">Имя</div>
+                            <div class="text-paragraph_small adds-user">пользователь</div>
+                            <div class="text-button_nicknames adds-nickname">@никнэйм</div>
+                        </div>
+                    </div>
+                    <div class="wiew text-paragraph">смотреть</div>
+                </div>
+                <!-- <div class="buttons-2">
+                    <div class="btn-thrd text-paragraph_small">Дальше -></div>
+                    <div class="btn-save" id="likeBTN">
+                        <div class="btn-four text-paragraph_small">Cохранить себе</div>
+                        <div class="like"><img src="img/like-1.svg" id="likeIMG"></div>
+                    </div>
+                </div> -->
+                <div class="maybe-card-44">
+                    <div class="maybe-like-7">
+                        <div class="mlike-image-7" id="likeButton">
+                            <div class="like-card"><img id="likeImage" src="img/heart.svg"></div>
+                        </div>
+                        <div class="text-paragraph_small cat-name">категория товара</div>
+                    </div>
+                    <div class="adds-mlike">
+                        <div class="adds-mlike-text-2">
+                            <div class="text-paragraph adds-name-2">Название товара
+                                две-три строки</div>
+                        </div>
+                    </div>
+                    <div class="wiew-2 text-paragraph">смотреть</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="text-h1 graphs">Поля ввода и аккордеон</div>
+
+    <div class="container">
+        <div class="registration-card">
+            <div class="in-card">
+                <div class="in-card title text-large-title">
+                    Регистрация<br>на GLAM
+                </div>
+                <div class="in-card inputs">
+                    <div class="in-card inp nick text-paragraph_small">
+                        <input type="text" placeholder="Никнейм пользователя*" required>
+                    </div>
+                    <div class="in-card inp FIO text-paragraph_small">
+                        <div>
+                            <input type="text" placeholder="Имя*" required>
+                        </div>
+                        <div style="margin-left: 24px;">
+                            <input type="text" placeholder="Фамилия">
+                        </div>
+                    </div>
+                    <div class="in-card inp radio text-paragraph_small">
+                        <p>Пол</p>
+                        <div>
+                            <fieldset>
+                                <div style="padding-left: 47px;">
+                                    <input name="gender" type="radio" checked>
+                                    <label for="gender">Женщина</label>
+                                </div>
+                                <div style="padding-left: 25px;">
+                                    <input name="gender" type="radio">
+                                    <label for="gender">Мужчина</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="in-card inp check text-paragraph_small">
+                        <input name="k" type="checkbox" required>
+                        <div style="padding-left:24px;">
+                            <p>Я согласен с <a href="#">политикой конфиденциальности платформы<a>*<p>
+                        </div>
+                    </div>
+                    <div class="in-card inp btn text-button_nicknames">
+                        <button type="submit">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="ac-column">
+                <div class="ac-col acordion">
+                    <div class="accordion">
+                        <div class="accordion-item" id="question1">
+                            <hr>
+                            <a class="accordion-link" href="#question1">
+                                <div class="flex">
+                                    <div class="text-button">Описание</div>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <div class="text-button_nicknames">лорем ипсум...</div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question2">
+                            <a class="accordion-link" href="#question2">
+                                <div class="flex">
+                                    <div class="text-button">Характеристики</div>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <div class="text-button_nicknames">лорем ипсум...</div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question3">
+                            <a class="accordion-link" href="#question3">
+                                <div class="flex">
+                                    <div class="text-button">Состав</div>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <div class="text-button_nicknames">лорем ипсум...</div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question4">
+                            <a class="accordion-link" href="#question4">
+                                <div>
+                                    <div class="text-button">Для кого подойдет</div>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <div class="text-button_nicknames">лорем ипсум...</div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="accordion-item" id="question5">
+                            <a class="accordion-link" href="#question5">
+                                <div>
+                                    <div class="text-button">Аллергия и другие реакции</div>
+                                </div>
+                                <i class="icon ion-md-arrow-forward"></i>
+                                <i class="icon ion-md-arrow-down"></i>
+                            </a>
+                            <div class="answer">
+                                <div class="text-button_nicknames">лорем ипсум...</div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="ac-col search">
+                    <div class="ac-col search con text-button">
+                        <input id="inp1" type="text" placeholder="Поиск по отзывам...">
+                    </div>
+                    <img src="img/search.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="text-h1 graphs">Шрифтовые начертания</div>
+
+    <div class="container">
+        <div class="wrapper-typography">
+            <div class="typography-left">
+                <div class="type-style">
+                    <div class="text-large-title">Desktop/large-title</div>
+                    <div class="text-subtitle">Desktop/subtitle</div>
+                    <div class="text-subtitle-2">Desktop/subtitle-2</div>
+                    <div class="text-subtitle-2_bold">Desktop/subtitle-2</div>
+                    <div class="text-subtitle-3">Desktop/subtitle-3</div>
+                    <div class="text-paragraph">Desktop/paragraph</div>
+                    <div class="text-paragraph_small">Desktop/paragraph_small</div>
+                    <div class="text-button">Desktop/button</div>
+                    <div class="text-title_low">Desktop/title_low</div>
+                    <div class="text-button_nicknames">Desktop/button_nicknames</div>
+                </div>
+                <div class="type-size">
+                    <div class="text-large-title">40/auto</div>
+                    <div class="text-subtitle">32/auto</div>
+                    <div class="text-subtitle-2">24/auto</div>
+                    <div class="text-subtitle-2_bold">24/auto</div>
+                    <div class="text-subtitle-3">18/auto</div>
+                    <div class="text-paragraph">20/auto</div>
+                    <div class="text-paragraph_small">16/Auto</div>
+                    <div class="text-button">16/Auto</div>
+                    <div class="text-title_low">14/Auto</div>
+                    <div class="text-button_nicknames">12/Auto</div>
+                </div>
+            </div>
+            <div class="typography-right">
+                <div class="text-paragraph_small">Ввод. Статично</div>
+                <div class="input-state">
+                    <div class="text-paragraph_small input-state_defalt">E-mail</div>
+                </div>
+                <div class="text-paragraph_small">Ввод. Активное поле</div>
+                <div class="input-state">
+                    <div class="text-paragraph_small input-state_active">ax.sofia@</div>
+                </div>
+                <div class="text-paragraph_small">Ввод. Ошибка</div>
+                <div class="input-state">
+                    <div class="text-paragraph_small input-state_error">ax.sofia@yondex.ru</div>
+                    <div class="text-button_nicknames input-state_hint">Некорректный почтовый адрес</div>
+                </div>
+                <div class="text-paragraph_small">Ввод. Предупреждение</div>
+                <div class="input-state">
+                    <div class="text-paragraph_small input-state_predic">E-mail</div>
+                    <div class="text-button_nicknames input-state_hint">Пароль должен содержать не менее 8 знаков</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-h1 graphs">Цветовая палитра</div>
+
+    <div class="container">
+        <div class="color-pallet">
+            <div class="swatch-cards">
+                <div class="shape color-swatch_black"></div>
+                <div class="text-button">#00000</div>
+            </div>
+            <div class="swatch-cards">
+                <div class="shape color-swatch_gray"></div>
+                <div class="text-button">#D9D9D9</div>
+            </div>
+            <div class="swatch-cards">
+                <div class="shape color-swatch_orange"></div>
+                <div class="text-button">#F3733C</div>
+            </div>
+            <div class="swatch-cards">
+                <div class="shape color-swatch_peach"></div>
+                <div class="text-button">#FBBE97</div>
+            </div>
+            <div class="swatch-cards">
+                <div class="shape color-swatch_border"></div>
+                <div class="text-button"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
